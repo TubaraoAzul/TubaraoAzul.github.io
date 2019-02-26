@@ -1,185 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <title>Page Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script>
-        $("#mymain").bind("pageshow", 
-                          function(event, data) {
-                                $.mobile.loadPage( "contact.html", { showLoadMsg: false } );
-                          });
-      </script>
-</head>
-
-
-<body>
-
-    <!-- Start of first page -->
-    <div data-role="page" id="mymain" data-fullscreen="true">
-
-        <!-- header --> 
-        <div data-role="header" id="myheader" data-id="persistheader" data-position="fixed">
-            <a href="#app_menu_panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false"></a>
-            <h1>Tubarões Azuis</h1>
-            <a href="#app_signin_panel" data-icon="user" data-iconpos="notext" data-shadow="false" data-iconshadow="false"></a>
-        </div>
-        <!-- /header -->
-
-        <!-- content -->
-        <div data-role="content" id="mycontent" class="ui-content">
-            <a href="contact.html">js fetch</a>
-            <a href="#page2" data-transition="flip">go to page2</a>
-
-
-            <!-- <a href="contactus.html" data-role="button" data-prefetch>Prefetch Page</a>    -->
-
-            <div data-role="collapsibleset" data-content-theme="a" data-iconpos="left" id="set">
-                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="set0"
-                    data-collapsed="true">
-                    <h3>Headlines</h3>
-                    <ul>
-                        <li>Heldon's scoring streak</li>
-                        <li>Djaniny Tavares is new Sevilla signing</li>
-                    </ul>
-                </div>
-
-                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="set7"
-                    data-collapsed="true">
-                    <h3>Cabo Verde Futebol Federation</h3>
-                    <p>Cup of African Nations is the new mission.</p>
-                </div>
-
-                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="se2"
-                    data-collapsed="true">
-                    <h3>Vacation Packages</h3>
-                    <p>Provide a list of reputable insured auto rental companies.</p>
-                </div>
-
-                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="set3"
-                    data-collapsed="true">
-                    <h3>Flight Schedules</h3>
-                    <p>Provide a list of flights from various European countries and United States of
-                        America.</p>
-                </div>
-
-                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="set4"
-                    data-collapsed="true">
-                    <h3>Find Hotels</h3>
-                    <p>Provide a list of reputable hotels with direct links to their
-                        website.
-                    </p>
-                </div>
-
-                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="set5"
-                    data-collapsed="true">
-                    <h3>Auto Rentals</h3>
-                    <p>Provide a list of reputable insured auto rental companies.</p>
-                </div>
-
-                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" id="set6"
-                    data-collapsed="true">
-                    <h3>Cabo Verde Futebol League</h3>
-                    <p>Sporting Clube da Praia wins national title.</p>
-                </div>
-            </div>
-            <ul>
-                 <li><a href="#oops"> one </a> </li>
-                <li>two</li>
-                <li>three</li>
-
-                        
-            </ul>
-            <div data-role="popup" id="popupCloseRight" class="ui-content" style="max-width:280px">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-                <p>I have a close button at the top right corner with simple HTML markup.</p>
-            </div>
-
-            <h4>&copy; 2017 Sfr Informatics</h4>
-            <!-- /content -->
-
-
-
-
-        </div>
-
-        <!-- footer -->
-        <div data-role="footer" id="myfooter" data-id="persistheader" data-position="fixed">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="Flights">Flights</a>
-                    <li><a href="hotels">Hotel</a>
-                    <li><a href="auto_rentals">Auto Rentals</a>
-                </ul>
-            </div>
-        </div>
-        <!-- /footer -->
-
-        <!-- menu panel -->
-        <div data-role="panel" id="app_menu_panel" data-position="left" data-display="overlay" data-display="push"
-            data-position-fixed="true" data-theme="b">
-            <a href="#" data-rel="close" data-icon="close" data-iconpos="notext" data-shadow="false" data-iconshadow="false">
-                Close
-            </a>
-            <div>
-                <ul data-role="navbar">
-                    <li><a href="/home">News</a></li>
-                    <li><a href="/news">Futebol Federation</a></li>
-                    <li><a href="/news">Primeira Liga</a></li>
-                    <li><a href="/news">Education</a></li>
-                    <li><a href="/news">Sports</a></li>
-                    <li><a href="/news">Who We Are</a></li>
-                    <li><a href="/news">Technology</a></li>
-                    <li><a href="/roster">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- /menu panel -->
-
-        <!-- signin panel-->
-        <div data-role="panel" id="app_signin_panel" data-display="overlay" data-display="push" data-position="right"
-            data-position-fixed="true" data-theme="b">
-            <a href="#" data-rel="close" data-icon="close" data-iconpos="notext" data-shadow="false" data-iconshadow="false">
-                Close
-            </a>
-            <div>
-                <form>
-                            <div style="padding:10px 20px;">
-                                    <h3>Please sign in</h3>
-                                    <label for="un" class="ui-hidden-accessible">Username:</label>
-                                    <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
-                                    <label for="pw" class="ui-hidden-accessible">Password:</label>
-                                    <input type="password" name="pass" id="pw" value="" placeholder="password"
-                            data-theme="a">
-                                    <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign
-                            in</button>
-                                </div>
-                        </form>
-            </div>
-        </div>
-        <!-- /signin panel-->
-
-    </div>
-    <!-- /page -->
-
-    <div id="page2" data-role="page" data-title="Multi-Page Template">
-        <div data-role="header">
-            <h1>Header of #page2</h1>
-        </div>
-        <div data-role="content">
-            <a href="#" data-role="button" data-rel="back" data- theme="b">Go Back</a>
-        </div>
-        <div data-role="footer">
-            <h4>Footer of #page2</h4>
-        </div>
-    </div>
-
-
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
