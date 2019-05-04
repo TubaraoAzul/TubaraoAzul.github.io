@@ -1,201 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Home | Learning Bootstrap 4</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
 
 <body>
-    <form action="/forms/my_form.axp" oninput="res.value=parseInt(sli.value)">
 
-
-        <div class="meter-example">
-            <div>
-                <label for="fuel">Fuel level (high value is good)</label>
-                <meter id="fuel" name="fuel" min="0" max="100" low="33" high="66" optimum="80" value="23">
-                    at 50/100
-                </meter>
-            </div>
-            <div>
-                <label for="pressure">Pressure (low value is good)</label>
-                <meter id="pressure" name="pressure" min="0" max="100" low="25" high="75" optimum="40" value="50">
-                    is OK
-                </meter>
-            </div>
-        </div>
-
-        <br />
-        <!--   -->
-        <label for="my-form-fname-label">Firstname</label>
-        <input name="my-form-fname" id="my-form-fname" type="text" autofocus required />
-        <label for="my-form-mname-label">Middle Initial</label>
-        <input name="my-form-mname" id="my-form-mname" type="text" minlength="1" maxlength="1" size="2" required />
-        <label for="my-form-lname-label">Lastname</label>
-        <input name="my-form-lname" id="my-form-lname" type="text" required />
-        <br />
-
-        <!-- date  -->
-        <label for="my-form-delivery">Delivery Date</label>
-        <input name="my-form-delivery" id="my-form-delivery" type="date" min="2018-08-24" max="2018-09-04" required />
-        <br />
-
-        <label for="my-form-children">Number of Children</label>
-        <input id="my-form-number" type="number" min="0" max="10" step="1" /> <br />
-
-        <label for="my-form-state">State</label>
-        <input id="my-form-name" type="text" name="my-form-state" list="my-form-states">
-        <datalist id="my-form-states">
-            <option>Rhode Island</option>
-            <option>Massachusetts</option>
-            <option>Connecticut</option>
-            <option>New Jersey</option>
-            <option>New York</option>
-            <option>Other</option>
-        </datalist>
-
-        <br />
-
-        <label for="my-form-email-label">Email</label>
-        <input name="my-form-email" id="my-form-email" type="email" autocomplete required /> <br />
-
-
-        <label for=my-form-comment>Comment</label>
-        <textarea name="my-form-comment" id="my-form-comment" rows="3" cols="33" maxlength="200" spellcheck wrap="hard"></textarea>
-        <br />
-
-        <!--  slider -->
-        <label for="my-form-children-label">Children</label>
-        <input type="range" id="sli" min="0" max="10" step="1" value="4" />
-        <output id="res">4</output>
-
-        <!--  checkbox 
-	       event:  change, input  attributes:  checked value  methods: selected()
-	-->
-        <fieldset>
-            <legend>Favorite Teams</legend>
-            <div>
-                <input type="checkbox" id="celtics" name="fav_team" value="celtics" />
-                <label for="celtics">Boston Celtics</label>
-            </div>
-            <div>
-                <input type="checkbox" id="patriots" name="fav_team" value="patriots" />
-                <label for="patriots">New England Patriots</label>
-            </div>
-            <div>
-                <input type="checkbox" id="pawsox" name="fav_team" value="pawsox" />
-                <label for="pawsox">Pawtucket Red Sox</label>
-            </div>
-        </fieldset>
-
-        <!--  radio button
-		        event:  change, input  attributes:  checked  methods: selected()
-		 -->
-        <fieldset>
-            <legend>Favorite Auto Brand</legend>
-
-            <div>
-                <input type="radio" id="bmw" name="car" />
-                <label for="bmw">BMW</label>
-            </div>
-
-            <div>
-                <input type="radio" id="mb" name="car" />
-                <label for="mb">Mercedes-Benz</label>
-            </div>
-
-            <div>
-                <input type="radio" id="lexus" name="car" />
-                <label for="lexus">Lexus</label>
-            </div>
-            <div>
-                <input type="radio" id="audi" name="car" />
-                <label for="audi">Audi</label>
-            </div>
-            <div>
-                <input type="radio" id="acura" name="car" />
-                <label for="acura">Acura</label>
-            </div>
-        </fieldset>
-
-        <!--  telephone
-		        event:  change, input  attributes:  checked  methods: selected()
-		 -->
-
-        <fieldset>
-            <legend>Contact information</legend>
-
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="(401)434-7890" pattern="\([0-9]{3}\)[0-9]{3}-[0-9]{4}"
-                required />
-            <span class="validity"></span>
-
-        </fieldset>
-
-        <!--  week
-		        event:  change, input  attributes:  checked  methods: selected()
-		 -->
-
-        <fieldset>
-            <legend>2018/2019 La Liga</legend>
-
-            <div class="control">
-                <label for="camp-week">Choose a week</label>
-                <input type="week" name="camp-week" id="camp-week" min="2018-W38" max="2019-W20" value="2018-W40"
-                    required />
-            </div>
-
-        </fieldset>
-
-        <!--  password and submit button
-		 -->
-
-        <fieldset>
-            <legend>Sign in</legend>
-
-            <div>
-                <label for="userName">Username:</label>
-                <input type="text" id="username" name="username" required />
-            </div>
-
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" minlength="8" required placeholder="8 characters minimum" />
-            </div>
-
-            <input type="submit" value="Sign in">
-
-        </fieldset>
-
-
-
-        <fieldset>
-            <legend>Appointment details</legend>
-
-            <div class="control">
-                <label for="appt-time">Time:</label>
-                <input type="time" id="appt-time" name="appt-time" min="9:00" max="18:00" required />
-                <span class="hours">Office hours: 9AM to 6PM</span>
-            </div>
-
-
-            <div class="search-control">
-                <input type="search" id="site-search" name="q" placeholder="Search the site..." aria-label="Search through site content">
-                <button>Search</button>
-            </div>
-        </fieldset>
-
-
-
-
-        <label for="pet-select">Choose a pet:</label>
-
-        <select id="pet-select">
-            <option value="">--Please choose an option--</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
-        </select>
-
+  <nav class="navbar navbar-light bg-faded m-b-2">
+    <a class="navbar-brand" href="#">Learning Bootstrap 4</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <form class="form-inline pull-xs-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-primary" type="submit">Search</button>
     </form>
+  </nav>
+
+  <div class="container">
+    <!-- page title //-->
+    <div class="row m-t-3">
+      <div class="col-md-12">
+        <h1>Blog</h1>
+      </div>
+    </div>
+    <!-- page body //-->
+    <div class="row m-t-3">
+      <div class="col-md-8">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+          tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+          semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+          ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+          fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec
+          non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+          egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
+          porttitor, facilisis luctus, metus</p>
+      </div>
+      <div class="col-md-4 hidden-md-down">
+        <p>Sidebar</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+          tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+          semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+          ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+          fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec
+          non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+          egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
+          porttitor, facilisis luctus, metus</p>
+      </div>
+    </div>
+    <!-- mailing list //-->
+    <!-- mailing list //-->
+    <div class="row m-t-3">
+      <div class="col-md-12">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+          tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+          semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+          ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+          fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec
+          non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque
+          egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
+          porttitor, facilisis luctus, metus</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer //-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        Learning Bootstrap 4 2016
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- jQuery first, then Bootstrap JS. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
