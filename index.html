@@ -2,47 +2,31 @@
 <html lang="en" class="h-100">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Sticky Footer Navbar Template · Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min-4-3-1.css" rel="stylesheet" />
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="jquery.min-3-4-1.js"></script>
-    <script src="bootstrap.min-4-3-1.js"></script>
     <script>
         $(document).ready(function () {
             $("button").click(function () {
-                $(this).hide();
+                $("#sfr_jquery_test_1").hide();
             });
         });
     </script>
-    <!--
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    Custom styles for this template 
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <link href="bootstrap.min-4-3-1.css" rel="stylesheet" />
+
+    <script src="jquery.min-3-4-1.js"></script>
+
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     -->
+
+    <script src="bootstrap.min-4-3-1.js"></script>
+
+
+    <title>Tubarao Azul</title>
 
 </head>
 
@@ -50,7 +34,7 @@
     <header>
         <!-- Fixed navbar -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="#"> <img src="/images/apple-touch-icon.png" width="30" height="30"
+            <a class="navbar-brand" href="#"> <img src="home.png" width="30" height="30"
                     class="d-inline-block align-top" alt=""> <span
                     style="font-family: 'Comic Sans MS'; font-style: italic;">Tubaroes
                     Azuis</span>
@@ -89,13 +73,14 @@
 
 </body>
 
-<br />
-<br />
-<br />
-<div>
+<div id='sfr-spacer'><br />
+    <br />
+    <br />
+</div>
+<div id='sfr_jquery_test_1'>
     <button>jQuery Test</button>
 </div>
-<div class="container">
+<div id='sfr-main' class="container">
     <div class="row">
         <div class="col-sm-4">
             <h3>Column 1</h3>
@@ -114,7 +99,7 @@
         </div>
     </div>
 </div>
-<div>
+<div id='sfr-test-2'>
     <ul>
         <li>1</li>
         <li>1</li>
