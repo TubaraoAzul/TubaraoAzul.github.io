@@ -5,29 +5,21 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <script src="public/javascripts/jquery.min-3-4-1.js"></script>
+        <link href="public/stylesheets/bootstrap.min-4-3-1.css" rel="stylesheet" />
+        <script src="public/javascripts/bootstrap.min-4-3-1.js"></script>
+        <link href="public/stylesheets/site-1-1.css" rel="stylesheet" />
+        <script src="public/javascripts/site-1-2.js"></script>
         <script>
             $(document).ready(function () {
-                $("button").click(function () {
+                $("#sfr_jquery_test_1").click(function () {
                     $("#sfr_jquery_test_1").hide();
                 });
             });
         </script>
-
-        <link href="public/stylesheets/bootstrap.min-4-3-1.css" rel="stylesheet" />
-
-        <script src="public/javascripts/jquery.min-3-4-1.js"></script>
-
-        <!-- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    -->
-
-        <script src="public/javascripts/bootstrap.min-4-3-1.js"></script>
-
-
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">  -->
         <title>Tubarao Azul</title>
-
     </head>
 
     <body class="d-flex flex-column h-100">
@@ -79,8 +71,12 @@
         <br />
     </div>
     <div id='sfr_jquery_test_1'>
-        <button>jQuery Test</button>
+        <button>Click to hide me</button>
         <h2>Nuno Marcos is so cool!</h2>
+    </div>
+    <div id='sfr_jquery_test_2' onclick='siteAlert()'>
+        <button>Click me</button>
+        <h2>Emma Alice is a pain!</h2>
     </div>
     <div id='sfr-main' class="container">
         <div class="row">
